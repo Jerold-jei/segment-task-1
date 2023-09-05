@@ -1,0 +1,119 @@
+
+.modal.left .modal-dialog,
+	.modal.right .modal-dialog {
+		position: fixed;
+		margin: auto;
+		max-width: 650px;
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
+	}
+
+	.modal.left .modal-content,
+	.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+	
+	.modal.left .modal-body,
+	.modal.right .modal-body {
+		padding: 15px 15px 80px;
+	}
+        
+/*Right*/
+	.modal.right.fade .modal-dialog {
+		right: 0%;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.3s linear, right 0.3s ease-out;
+	}
+	
+	.modal.right.fade.in .modal-dialog {
+		right: 0;
+	}
+
+/* ----- MODAL STYLE ----- */
+	.modal-content {
+		border-radius: 0;
+		border: none;
+	}
+
+	.modal-header {
+		border: 0;
+        background-color: #3982a7;
+        /* margin: 0 auto; */
+        color: #fff;
+        /* padding: 0; */
+        justify-content: flex-start;
+        align-items: flex-start;
+	}
+
+/* ----- v CAN BE DELETED v ----- */
+body {
+	background-color: #78909C;
+}
+
+.demo {
+	padding-top: 60px;
+	padding-bottom: 110px;
+}
+
+.btn-demo {
+	margin: 15px;
+    padding: 10px 15px;
+    border-radius: 0;
+    font-size: 25px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff!important;
+}
+
+.btn-demo:focus {
+	outline: 0;
+}
+
+.demo-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 15px;
+	background-color: #212121;
+	text-align: center;
+}
+
+.demo-footer > a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+}
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-right: 27rem!important;
+    /* line-height: 1; */
+    color: #fff;
+    /* text-shadow: 0 1px 0 #fff; */
+    opacity: .5;
+}
+.close:hover {
+   color: #fff
+}
+.modal-form{
+    position: relative;
+    padding:10px 20px;
+}
+.seg-link{
+
+}
+.form-buttons{
+  position: relative;
+  top: 32rem; 
+}
+.form-error{
+  color:red;
+}
